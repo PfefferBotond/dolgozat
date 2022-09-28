@@ -1,14 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="hu">
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Dolgozat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <script src="node_module/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="main.js"></script>
+    <script src="main.css"></script>
 </head>
 <body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+    <img id="cica" src="/cica.jpeg" alt="Cica boci szemekkel néz">
+    <p>testreszabási lehetőségek:</p>    
+    <script src='/dist/main.js'></script>
+    <div>
+        <button id="színváltás">keret színváltás</button>
+    </div>
 </body>
+<footer>
+    <style>
+        footer{
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function darkmode(){
+            var element = document.footer;
+            element.classList.toggle("dark-mode")
+        }
+    </script>
+    <button onclick="darkmode()">darkmode</button>
+    <p>Pfeffer Botond 14/T</p>
+</footer>
 </html>
