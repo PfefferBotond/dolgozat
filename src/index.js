@@ -1,6 +1,6 @@
 import './style.css';
-import './node_modules/bootstrap/dist/js/bootstrap.bundle.js'
-import './node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
+import 'bootstrap/dist/css/bootstrap.css'
 
 function darkMode() {
     var element = document.body;
@@ -13,10 +13,8 @@ document.getElementById("darkMode").addEventListener("click", darkMode);
 
 document.getElementById("darkMode").addEventListener("click", darkMode);
 
-document.getElementById("kepszelesseg").addEventListener("keyup", kepUrl);
+document.getElementById("kepszelesseg").addEventListener("keyup",);
 
-document.getElementById("kepkeretvastagsag").addEventListener("keyup", kepUrl);
+document.getElementById("kepkeretvastagsag").addEventListener("keyup",);
 
-document.getElementById("kepkeretszine").addEventListener("keyup", kepUrl);
-
-document.addEventListener('DOMContentLoaded', init)
+document.getElementById("kepkeretszine").addEventListener("keyup");
