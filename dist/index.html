@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html>
 <head>
     <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Dolgozat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
-    <script src="node_module/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="main.js"></script>
-    <script src="main.css"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <img id="cica" src="/cica.jpeg" alt="Cica boci szemekkel néz">
-    <p>testreszabási lehetőségek:</p>    
-    <script src='/dist/main.js'></script>
-    <div>
-        <button id="színváltás">keret színváltás</button>
-    </div>
+     <div class="container">
+        <div class="row">
+             <div class="col-md-6">
+                <input type="text" placeholder="kép szélesség" id="kepszelesseg">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="keret vastagsága" id="kepkeretvastagsag">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="kert színe" id="kepkeretszine">
+            </div>   
+
+     <img src="/cica.jpeg" id="kep" class="img" alt="Egy cica boci szemekkel bámul a kamerába">
+
+
+    <script src='/main.js'></script>
 </body>
 <footer>
-    <style>
-        footer{
-            background-color: white;
-            color: black;
-        }
-
-        .dark-mode{
-            background-color: black;
-            color: white;
-        }
-    </style>
-    <script>
-        function darkmode(){
-            var element = document.footer;
-            element.classList.toggle("dark-mode")
-        }
-    </script>
-    <button onclick="darkmode()">darkmode</button>
-    <p>Pfeffer Botond 14/T</p>
-</footer>
+    <div class="container">
+       <h1>Pfeffer Botond 14/T</h1>
+       <div class="center">
+           <button class="center" id="darkMode">Darkmode/Light mode</button>
+       </div>
+   </div>
+   </footer>
 </html>
